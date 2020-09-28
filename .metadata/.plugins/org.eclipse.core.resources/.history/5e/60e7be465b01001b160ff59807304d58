@@ -1,0 +1,20 @@
+package com.AddressBookSystem;
+
+import java.util.Scanner;
+
+public class AddressBookMain {
+	public static void main(String[] args) {
+		Scanner input = new Scanner(System.in);
+		Contacts c = new Contacts(firstName, lastName, address, city, state, zip, phoneNumber, email);
+		System.out.println("enter contact details in the order : firstName/lastName/address/city/state/zip/phoneNumber/email");
+		c.firstName = input.nextLine();
+		c.lastName = input.nextLine();
+		c.address = input.nextLine();
+		c.city = input.nextLine();
+		c.state = input.nextLine();
+		c.zip = input.nextDouble();
+		c.phoneNumber = input.nextDouble();
+		c.email = input.nextLine();
+	}
+
+}

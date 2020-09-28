@@ -1,0 +1,13 @@
+package com.AddressBookSystem;
+
+import java.util.Scanner;
+
+public class AddressBookMain {
+	public static void main(String[] args) {
+		Scanner input = new Scanner(System.in);
+		Contacts c = new Contacts(firstName, lastName, address, city, state, zip, phoneNumber, email);
+		System.out.println("enter contact details in the order : firstName/lastName/address/city/state/zip/phoneNumber/email");
+		c.firstName = input.nextLine();
+	}
+
+}
